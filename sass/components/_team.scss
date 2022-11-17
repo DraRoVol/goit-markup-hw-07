@@ -1,0 +1,84 @@
+.team {
+    text-align: center;
+    background-color: $backgroundline-color;
+}
+
+.team--title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+
+    letter-spacing: 0.03em;
+}
+
+.team--list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team--item {
+    background: $secondary-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team--name {
+    margin: 30px 0 10px 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team--text {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: $grey-color;
+}
+
+/* Networks */
+
+.team--network-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.team--network-link {
+    align-items: center;
+}
+
+.team--network-item {
+    transition: background-color 250ms $timing-function;
+
+    display: block;
+    height: 44px;
+
+    border-radius: 50%;
+    background-color: $secondary-color;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.team--network {
+    transition: fill 250ms $timing-function;
+
+    padding: 12px;
+    fill: $icon-color;
+
+    &:hover,
+    &:focus {
+        fill: $secondary-color;
+    }
+}

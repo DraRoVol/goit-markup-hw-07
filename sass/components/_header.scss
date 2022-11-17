@@ -1,0 +1,105 @@
+.header {
+    background-color: $secondary-color;
+    border-bottom: 1px solid #ECECEC;
+
+    &--main{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav {
+    margin-left: 93px;
+
+    &--list {
+        display: flex;
+    }
+}
+
+.nav--item + .nav--item,
+.contacts--item + .contacts--item {
+    margin-left: 50px;
+}
+
+
+.nav--link {
+    transition: color 250ms $timing-function;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: $primary-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.nav--page {
+    position: relative;
+
+    color: $accent-color;
+
+    &::after {
+        position: absolute;
+    
+        content: "";
+        bottom: -1px;
+        display: block;
+        width: 100%;
+        height: 4px;
+    
+        border-radius: 2px;
+        background-color: $accent-color;
+    }
+}
+
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.contacts--link {
+    transition: fill 250ms, color 250ms $timing-function;
+
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: $grey-color;
+    fill: $grey-color;
+
+    &:hover {
+        color: $accent-color;
+        fill: $accent-color;
+    }
+}
+
+.contacts--envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.contacts--smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
