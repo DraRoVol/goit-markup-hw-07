@@ -2,7 +2,7 @@
     background-color: $secondary-color;
     border-bottom: 1px solid #ECECEC;
 
-    &--main{
+    &__main{
         display: flex;
         align-items: center;
     }
@@ -11,18 +11,18 @@
 .nav {
     margin-left: 93px;
 
-    &--list {
+    &__list {
         display: flex;
     }
 }
 
-.nav--item + .nav--item,
-.contacts--item + .contacts--item {
+.nav__item + .nav__item,
+.contacts__item + .contacts__item {
     margin-left: 50px;
 }
 
 
-.nav--link {
+.nav__link {
     transition: color 250ms $timing-function;
 
     display: block;
@@ -43,7 +43,7 @@
     }
 }
 
-.nav--page {
+.nav__page {
     position: relative;
 
     color: $accent-color;
@@ -69,7 +69,7 @@
     margin-left: auto;
 }
 
-.contacts--link {
+.contacts__link {
     transition: fill 250ms, color 250ms $timing-function;
 
     display: flex;
@@ -92,13 +92,13 @@
     }
 }
 
-.contacts--envelope {
+.contacts__envelope {
     width: 16px;
     height: 12px;
     margin-right: 10px;
 }
 
-.contacts--smartphone {
+.contacts__smartphone {
     width: 10px;
     height: 16px;
     margin-right: 10px;

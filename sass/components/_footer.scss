@@ -1,22 +1,24 @@
 .footer {
     background-color: $common-color;
+
+    &__main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 70px;
+        padding-top: 60px;
+    }
 }
 
-.footer--main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 70px;
-    padding-top: 60px;
-}
+/* Footer address */
 
-.footer--address {
+.address {
     margin-top: 20px;
     padding-bottom: 60px;
 
     font-style: normal;
 }
 
-.footer--item {
+.address__item {
     margin-bottom: 9px;
     display: block;
 
@@ -25,7 +27,7 @@
     }
 }
 
-.footer--link {
+.address__cont {
     transition: color 250ms $timing-function;
 
     font-weight: 400;
@@ -40,15 +42,15 @@
     &:focus {
         color: $secondary-color;
     }
+
+    &--color {
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.footer--cont {
-    color: rgba(255, 255, 255, 0.6);
-}
+/* Title for networks */
 
-/* Footer-icon */
-
-.footer--title {
+.footer__title {
     margin-bottom: 20px;
 
     font-size: 14px;
@@ -59,37 +61,9 @@
     color: $secondary-color;
 }
 
-.footer--icon-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.footer--icon {
-    transition: background-color 250ms $timing-function;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 10%);
-
-    &:hover,
-    &:focus {
-        background-color: $accent-color;
-    }
-}
-
-.footer--svg {
-    fill: $secondary-color;
-}
-
 /* Footer Subscription */
 
-.footer--subscription {
+.subscription {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
@@ -97,7 +71,7 @@
     color: $secondary-color;
 }
 
-.footer--mail {
+.subscription__mail {
     display: flex;
     flex-direction: column;
 
@@ -108,12 +82,12 @@
     text-transform: uppercase;
 }
 
-.footer--mail label {
+.subscription__mail label {
     display: contents;
     cursor: pointer;
 }
 
-.footer--input {
+.subscription__input {
     width: 358px;
     height: 50px;
     margin-top: 20px;
@@ -136,7 +110,7 @@
     }
 }
 
-.footer--input::placeholder {
+.subscription__input::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(20 / 16);
@@ -145,7 +119,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer--btn {
+.subscription__btn {
     transform: translateY(35px);
 
     display: flex;
@@ -167,7 +141,7 @@
     color: $secondary-color;
 }
 
-.footer--subscription-icon {
+.subscription__icon {
     margin-left: 10px;
 
     fill: $secondary-color;
